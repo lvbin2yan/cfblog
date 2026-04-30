@@ -1,0 +1,13 @@
+name = "cfblog-auto" # 名字要和博客 Worker 区分开
+main = "src/index.ts"
+compatibility_date = "2024-04-01"
+
+[triggers]
+# 每天早上 8:00 和 晚上 20:00 各触发一次 (UTC时间，请根据需要调整)
+# 如果是北京时间，早上 8 点是 "0 0 * * *"，晚上 20 点是 "0 12 * * *"
+crons = ["0 0 * * *", "0 12 * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "cfblog-db" # 必须和博客共用同一个数据库名
+database_id = "a9aea80b-9712-4b18-95bb-e11fba4b20aa"
