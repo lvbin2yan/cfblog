@@ -170,14 +170,15 @@ CFBlog 是一个类似 WordPress 的博客系统，使用 Cloudflare 生态系�
 cfblog/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml     # GitHub Actions 自动部署
-├── src/                    # 后端源码
+│                          # GitHub Actions 自动部署
+├── src/                   # 后端源码
 │   ├── index.ts           # Workers 入口文件
 │   ├── public-site/       # 一体化前台渲染模块
 ├── schema.sql             # 完整数据库架构（已整合所有迁移）
 ├── wrangler.toml          # Cloudflare Workers 配置
 ├── package.json
 └── README.md
+|__ cfblog-autobot/        #内容自动发布模块源码（AI+关键词搜索）
 
 ```
 
