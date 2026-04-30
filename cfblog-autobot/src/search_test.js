@@ -2,8 +2,8 @@
  * 模拟本地环境变量
  */
 const env = {
-    SERP_API_KEY: "289cb06b6136d09e8c3cabf1453386602d19689a079271c049cc52b7b50e3127",     // 填入后测试，或置为空测试切换
-    TAVILY_API_KEY: "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",   // 填入刚才申请的 Key
+    SERP_API_KEY: "5289cb06b6136d09e8c3cabf1453386602d19689a079271c049cc52b7b50e3127",     // 填入后测试，或置为空测试切换
+    TAVILY_API_KEY: "TEXT-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",   // 填入刚才申请的 Key
 };
 
 /**
